@@ -1,0 +1,82 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add a New User</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<style type="text/css">
+			html, body {
+ 					height: 100%;
+  					margin: 0;
+  					padding: 0;
+				}
+
+            h1 {text-align:center;}
+            h1 {color:#FFFFFF;}
+            h1 {background-color:#800000;}
+            h1 {font-size:250%;}
+
+			h2 {text-align:center;
+       		color:maroon;
+			   }
+
+  			 div#go	{
+                  		text-align:center;
+         			    color:black;
+                	}
+			   
+			h5 {	text-align:center;
+       				color:maroon;
+       			}
+
+		#mysubmit { background-color: maroon; 
+					color: white;
+				 }
+    	</style>
+</head>
+    <body>
+        <h1>e-Scheduler</h1>
+         <h2><u>Add user </u</h2>
+		<div align="right">
+		<a href = http://pluto.cse.msstate.edu/~dcspg31/login.html><FONT COLOR="#800000"><b>Back to login page </b></FONT></A>
+		</div>
+        <h5>Fill in all three fields to create a new user.</h5>
+        <form method="POST" action="addUser.php">
+            <table align="center">
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="firstname"/></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="lastname"/></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="username"/></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password"/></td>
+                </tr>
+                <tr>
+                    <td>Check Password</td>
+                    <td><input type="password" name="cpassword"/></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email"/></td>
+                </tr>
+                <tr>
+                    <td colspan="5">    
+                        <input type="submit" id="mysubmit" value="Submit"/>
+                        <input type="reset" id="mysubmit" value="Cancel"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
